@@ -1,0 +1,46 @@
+//variables & functions 
+@import 'variables';
+
+//fonts
+@import 'fonts';
+//icons
+@import '../components/Header/RightIcons/icons';
+//header
+@import '../components/Header/header';
+//product card
+@import '../components/ProductCard/productcard';
+//drawer menu
+@import '../components/Header/DrawerMenu/drawer';
+//body part
+*{
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+a{ 
+    color:#000;
+    text-decoration: none;
+}
+//components
+@import 'header';
+//product detail 
+@import '../components/ProductDetails/productdetail';
+//logo
+
+img{
+    width: 100%;
+}; 
+//base & layout
+ 
+@import 'breakpoints';
+@import 'grid';
+
+//colors
+ 
+
+//components (button,card,navbar)
+ @import 'card';
+
+//utilities (margin,padding, opacity) 
+
+

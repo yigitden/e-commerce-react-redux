@@ -1,0 +1,59 @@
+@use 'sass:math';
+
+%button{
+    margin: $base-margin*2; 
+    padding: $base-padding; 
+    border-radius: $base-border-radius;
+    cursor: pointer;
+    &:hover{
+ 
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+.drawer-title{
+    @extend %flex;
+    padding: $base-padding;
+}
+
+
+//Basket style
+
+.basket-list{
+    @extend %flex;
+    border: 1px solid $gray;
+    padding: $base-padding;
+    border-radius: math.div($base-border-radius,2);
+    margin: $base-margin;
+}
+.basket-delete-icon, .basket-image{
+    @extend %flex;
+}
+.basket-product-list{
+    height: 60vh;
+    overflow-y: scroll;
+}
+.basket-empty{
+    @extend %flex;
+    height: 60vh;
+}
+.basket-middle{
+    margin: 0 auto;
+}
+.amount{
+    margin-top: $base-margin;
+}
+.details-card{
+    @extend %button;
+    border: 1px solid $light; 
+    background-color: $shine;
+     
+}
+.go-payment{ 
+
+    @extend %button;
+    border: 1px solid $blue; 
+    background-color: $blue;
+    color: $shine;
+}

@@ -1,0 +1,17 @@
+
+.logo{
+    max-width: 260px;
+    height: 98px;
+    width: 100%;
+}
+.categories{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.cat-name{
+    cursor: pointer;
+    &:hover{
+        text-shadow: 0 0 1px  #6c6767; 
+        transition: 0.5s;
+    }
+}

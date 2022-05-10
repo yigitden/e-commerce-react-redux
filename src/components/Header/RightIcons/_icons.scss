@@ -1,0 +1,19 @@
+ 
+
+
+
+.icon{
+ color:$blue;
+ border: 1px solid $turq;
+ border-radius: $base-border-radius*2;
+ padding: $base-padding;
+ cursor: pointer;
+ &:hover{
+     color: $shine;
+     background-color: $turq;
+     transition: 0.3s;
+ }
+}
+.right-icons{
+    @extend %flex;
+}
