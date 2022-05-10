@@ -31,7 +31,7 @@ export default function DrawerMenu() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: 400 }}
+      sx={{ width: 450 }}
       role="presentation"
       onKeyDown={toggleDrawer(anchor, false)}
     >

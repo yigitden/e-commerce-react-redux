@@ -27,7 +27,7 @@ const BasketProductList = () => {
 
    </div>
    <div>
-     <div className='row amount justify-space-between'> <h2>Total Amount:</h2> <h2>{totalAmount.toFixed(2)} $</h2> </div>
+     <div className='row justify-space-between'> <h2>Total Amount:</h2> <h2>{totalAmount.toFixed(2)} $</h2> </div>
      <div className='row justify-center details-card' onClick={()=>cardDetailsClick()}>View Your Card Details</div>
      <div className='row justify-center go-payment' onClick={()=>paymentClick()}>Pay Shopping</div>
    </div>
