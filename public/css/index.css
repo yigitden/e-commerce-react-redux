@@ -110,6 +110,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .product-detail-image {
   width: 100%;
   height: 100%;
@@ -118,10 +122,6 @@ a {
 .summary-card {
   border: 1px solid #e2e2e2;
   border-radius: 10px;
-}
-
-img {
-  width: 100%;
 }
 
 .container {

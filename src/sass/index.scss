@@ -12,24 +12,12 @@
 //drawer menu
 @import '../components/Header/DrawerMenu/drawer';
 //body part
- 
-*{
-    font-family: 'Roboto', sans-serif; 
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-a{ 
-   
-    text-decoration: none;
-}
+@import 'body';
 
 //product detail 
 @import '../components/ProductDetails/productdetail';
 //logo
 
-img{
-    width: 100%;
-}; 
 //base & layout
  
 @import 'breakpoints';
