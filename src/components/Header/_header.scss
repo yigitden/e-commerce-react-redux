@@ -1,1 +1,24 @@
  
+.logo{
+    max-width: 260px;
+    height: 98px;
+    width: 100%;
+}
+.categories{
+    border-width: $base-border-thickness 0 $base-border-thickness 0;
+    border-style: solid;
+    border-color: $lightgray;
+    margin:$base-margin auto;
+}
+  
+.cat-name{
+    
+    cursor: pointer;
+    &:hover{
+        text-shadow: 0 0 1px  $gray; 
+        transition: 0.5s;
+    }
+    a{
+        color:$blue;
+    }
+}

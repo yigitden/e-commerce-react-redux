@@ -12,6 +12,30 @@
   transition: 0.3s;
 }
 
+.logo {
+  max-width: 260px;
+  height: 98px;
+  width: 100%;
+}
+
+.categories {
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #d1d1d1;
+  margin: 0.75rem auto;
+}
+
+.cat-name {
+  cursor: pointer;
+}
+.cat-name:hover {
+  text-shadow: 0 0 1px #e2e2e2;
+  transition: 0.5s;
+}
+.cat-name a {
+  color: #2155CD;
+}
+
 .amount-button {
   border: 1px solid #79DAE8;
   border-radius: 100%;
@@ -83,27 +107,7 @@
 }
 
 a {
-  color: #000;
   text-decoration: none;
-}
-
-.logo {
-  max-width: 260px;
-  height: 98px;
-  width: 100%;
-}
-
-.categories {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.cat-name {
-  cursor: pointer;
-}
-.cat-name:hover {
-  text-shadow: 0 0 1px #6c6767;
-  transition: 0.5s;
 }
 
 .product-detail-image {
