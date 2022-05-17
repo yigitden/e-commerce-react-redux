@@ -17,7 +17,7 @@ const Basket = ({product}) => {
           </div>
         
           
-          <div className='col-3-xl basket-delete-icon'> {totalProductPrice.toFixed(2)} $<DeleteOutlineIcon sx={{ cursor:'pointer'}} onClick={()=>dispatch(removeFromCard(product))}  /></div> 
+          <div className='col-3-xl basket-delete-icon'> <span className='card-price'>{totalProductPrice.toFixed(2)} $</span><DeleteOutlineIcon sx={{ cursor:'pointer'}} onClick={()=>dispatch(removeFromCard(product))}  /></div> 
       </div>
   )
 }

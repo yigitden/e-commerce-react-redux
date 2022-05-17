@@ -36,7 +36,7 @@
   color: #2155CD;
 }
 
-.basket-empty, .basket-delete-icon, .basket-image, .basket-list, .drawer-title, .amount-button, .amount, .card .card-title, .card .card-image, .category, .right-icons {
+.basket-empty, .basket-image, .basket-delete-icon, .basket-list, .drawer-title, .amount-button, .amount, .card .card-title, .card .card-image, .category, .right-icons {
   display: flex;
   align-items: center;
 }
@@ -83,9 +83,6 @@
   padding: 0.375rem;
   color: #E8F9FD;
 }
-.card .card-price {
-  color: #39A2DB;
-}
 .card .card-body {
   font-size: 1rem;
   height: 90px;
@@ -99,6 +96,10 @@
   background-color: #79DAE8;
   color: #E8F9FD;
   transition: 0.3s;
+}
+
+.card-price {
+  color: #39A2DB;
 }
 
 .product-card-button {
@@ -136,11 +137,26 @@
   padding: 0.75rem;
 }
 
+.total-amount {
+  margin: 0.75rem auto;
+}
+
 .basket-list {
   border: 1px solid #e2e2e2;
   padding: 0.75rem;
   border-radius: 10px;
-  margin-bottom: 0.75rem;
+  margin: 0.75rem;
+  height: 100px;
+}
+
+.basket-image {
+  overflow: hidden;
+}
+.basket-image img {
+  max-width: 100%;
+  height: 70px;
+  width: 65px;
+  object-fit: contain;
 }
 
 .basket-product-list {
@@ -154,11 +170,13 @@
 
 .basket-middle {
   margin: 0 auto;
+  color: #4B6587;
 }
 
 .details-card {
   border: 1px solid #0AA1DD;
   background-color: #E8F9FD;
+  color: #476072;
 }
 
 .go-payment {

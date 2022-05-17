@@ -49,9 +49,7 @@
         padding: math.div($base-padding, 2);
         color:$shine;
     }
-    .card-price{
-        color: $price;
-    }
+   
     .card-body{
         font-size: $base-font-size;
         height: 90px;
@@ -68,6 +66,9 @@
         }
     }
 };
+.card-price{
+    color: $price;
+}
 .product-card-button{
     height: 40px;
     font-weight: 500;
