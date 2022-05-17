@@ -41,9 +41,7 @@
 .basket-middle{
     margin: 0 auto;
 }
-.amount{
-    margin-top: $base-margin;
-}
+ 
 .details-card{
     @extend %button;
     border: 1px solid $light; 

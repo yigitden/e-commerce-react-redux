@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "../ProductCard";
 import { useAppDispatch, useAppSelector } from "../../store";
 const ProductList = () => {
-  const [allProducts, setAllProducts] = useState([]);
-  const productsArrayInCard = useAppSelector((state) => state.basket.data);
+  const [allProducts, setAllProducts] = useState([]); 
   const getAllProducts = async () => {
     await axios
       .get("https://fakestoreapi.com/products?limit=12")
@@ -16,7 +15,7 @@ const ProductList = () => {
 
   return (
     <div className="container">
-      <div className="row gap-1 justify-center">
+      <div className="product-list row gap-1 justify-center">
      
             <>
               {allProducts &&

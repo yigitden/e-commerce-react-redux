@@ -1,4 +1,78 @@
-@use 'sass:math';
+@use 'sass:math'; 
+%flex{
+    display: flex;
+    align-items: center;
+}
+%buttoncard{
+    border: 1px solid $turq;
+    border-radius: $base-border-radius;
+    padding:math.div($base-padding, 2) ;
+}
+.category{
+    @extend %flex;
+    margin: $base-margin auto;
+}
+
+.card{
+    display: block;
+    padding: $base-padding;
+    border: $base-border-thickness solid #ddd;
+    box-shadow: $base-box-shadow;
+    border-radius: math.div($base-border-radius, 2);  
+    height: 600px;
+    text-align: center;
+   
+    
+    .card-image{
+        @extend %flex;
+        padding: $base-padding; 
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            width: 250px;
+            height: 275px; 
+            object-fit: contain;
+        }
+    }
+    
+    .card-title{
+        @extend %flex;
+        font-size: $base-font-size;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+        height: 70px;
+        color: $title;
+    }
+    .card-category{
+        background-color: $turq;
+        border-radius: $base-border-radius; 
+        padding: math.div($base-padding, 2);
+        color:$shine;
+    }
+    .card-price{
+        color: $price;
+    }
+    .card-body{
+        font-size: $base-font-size;
+        height: 90px;
+        color: $title;
+    }
+    .card-button{
+        @extend %buttoncard;
+        padding: $base-padding;
+        cursor: pointer;
+        &:hover{
+            background-color: $turq;
+            color:$shine;
+            transition: 0.3s;
+        }
+    }
+};
+.product-card-button{
+    height: 40px;
+    font-weight: 500;
+    color:$button;
+}
 .amount{
     @extend %buttoncard;
     @extend %flex;

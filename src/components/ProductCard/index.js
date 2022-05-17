@@ -1,8 +1,7 @@
 import React from "react";
 import { addToCard } from "../../features/BasketSlice";
 import { useAppDispatch, useAppSelector } from "../../store";
-import AmountButton from "../AmountButton";
-import Button from "../Button";
+import AmountButton from "../AmountButton"; 
 const ProductCard = ({ product  }) => {
   const dispatch = useAppDispatch();
 
@@ -29,25 +28,28 @@ const ProductCard = ({ product  }) => {
           <img src={product.image} />
         </div>
         <div className="row  justify-space-between category">
-          <span className="card-category">
+          <div className="card-category">
             {product.category.toUpperCase()}
-          </span>
-          <span>{product.price.toFixed(2)} $</span>
+          </div>
+          <div className="card-price">{product.price.toFixed(2)} $</div>
         </div>
         <div className="row justify-center card-title">{product.title}</div>
-        <p className="card-body">
-          {truncateString(`${product.description}`, 120)}
-        </p>
+        <div className="card-body">
+          {truncateString(`${product.description}`, 85)}
+        </div>
+       <div className="product-card-button">
 
-           {productListAmount && productListAmount.amount ? (
-             <AmountButton productListAmount = {productListAmount}/>
-           )
-            :
-            (
-              <div className="row justify-center card-button" onClick={() =>dispatch(addToCard(productInfo))}>ADD TO CARD</div>
+
+
+             {productListAmount && productListAmount.amount ? (
+               <AmountButton productListAmount = {productListAmount}/>
+             )
+              :
+              (
+               <div className="row justify-center card-button" onClick={() =>dispatch(addToCard(productInfo))}>ADD TO CARD</div>
           
-            )}
-          
+              )}
+         </div>
       </div>
     </div>
   );
