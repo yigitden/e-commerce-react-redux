@@ -28,7 +28,7 @@
     border: 1px solid $gray;
     padding: $base-padding;
     border-radius: math.div($base-border-radius,2); 
-    height: 100px;
+    min-height: 100px;
     margin-bottom: $base-margin;
 }
 .product-title {
