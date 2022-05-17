@@ -11,7 +11,7 @@ const Basket = ({product}) => {
     <div className='row  basket-list justify-space-between'> 
           <div className='col-2-xl basket-image'><img src={product.image} /></div>
          
-          <div className='basket-middle col-7-xl '>
+          <div className='basket-middle col-6-xl '>
             <h5>{product.title} </h5>
          <p>{product.amount} {product.amount == 1 ? <>piece</> : <>pieces</>}</p>
           </div>

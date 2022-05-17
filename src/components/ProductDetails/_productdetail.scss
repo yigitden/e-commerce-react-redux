@@ -1,4 +1,11 @@
+@use 'sass:math';
+
 .product-detail-image{
     width: 100%;
-    height: 100%;
+    height: 100%; 
+}
+.summary-card {
+    border: 1px solid $gray;
+    border-radius: math.div($base-border-radius,2);
+
 }

@@ -11,7 +11,7 @@ const RightIcons = () => {
   return ( 
     <>
    
-     <div className='row icon'> <MdLogin size='20px'/> Login </div>
+      <div className='row icon'> <MdLogin size='20px'/> Login </div>
      <div className='row icon'><MdOutlinePersonAddAlt1 size='20px'/> Register </div> 
      
      <DrawerMenu/>

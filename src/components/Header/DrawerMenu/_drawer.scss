@@ -25,7 +25,7 @@
     border: 1px solid $gray;
     padding: $base-padding;
     border-radius: math.div($base-border-radius,2);
-    margin: $base-margin;
+    margin-bottom: $base-margin;
 }
 .basket-delete-icon, .basket-image{
     @extend %flex;

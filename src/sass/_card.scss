@@ -6,7 +6,7 @@
 %buttoncard{
     border: 1px solid $turq;
     border-radius: $base-border-radius;
-    padding: $base-padding;
+    padding:math.div($base-padding, 2) ;
 }
 .category{
     @extend %flex;
