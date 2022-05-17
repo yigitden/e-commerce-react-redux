@@ -15,11 +15,13 @@ const Categories = () => {
       },[])
   
   return (
-    <div className="row justify-space-around gap-1">
+  <div className="col-7-xs col-12-sm">
+    <div className="row justify-space-between gap-1">
+      
       {categories && categories.map((cat,index)=>(
-      <span className="cat-name" key={index}>  <Link to={`/${cat}`}> {cat.toUpperCase()}</Link></span>
+      <div className="cat-name" key={index}>  <Link to={`/${cat}`}> {cat.toUpperCase()}</Link></div>
       ))}
-       
+       </div>
     </div>
   );
 };
