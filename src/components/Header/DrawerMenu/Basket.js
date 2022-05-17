@@ -9,15 +9,15 @@ const Basket = ({product}) => {
  
   return (
     <div className='row  basket-list justify-space-between'> 
-          <div className='col-2-xl basket-image'><img src={product.image} /></div>
+          <div className='col-2-xs basket-image'><img src={product.image} /></div>
          
-          <div className='basket-middle col-6-xl '>
+          <div className='basket-middle col-6-xs'>
             <h5>{product.title} </h5>
          <p>{product.amount} {product.amount == 1 ? <>piece</> : <>pieces</>}</p>
           </div>
         
           
-          <div className='col-3-xl basket-delete-icon'> <span className='card-price'>{totalProductPrice.toFixed(2)} $</span><DeleteOutlineIcon sx={{ cursor:'pointer'}} onClick={()=>dispatch(removeFromCard(product))}  /></div> 
+          <div className='col-4-xs basket-delete-icon'> <span className='card-price'>{totalProductPrice.toFixed(2)} $</span><DeleteOutlineIcon sx={{ cursor:'pointer'}} onClick={()=>dispatch(removeFromCard(product))}  /></div> 
       </div>
   )
 }

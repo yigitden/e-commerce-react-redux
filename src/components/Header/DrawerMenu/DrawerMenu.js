@@ -31,7 +31,7 @@ export default function DrawerMenu() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: 450 }}
+      className="col-12-sm"
       role="presentation"
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -56,7 +56,7 @@ export default function DrawerMenu() {
   return (
     <div>
       <React.Fragment key={`right`}>
-      <Badge badgeContent={productsArrayInCard.length}  overlap="circular" color="primary">
+      <Badge  badgeContent={productsArrayInCard.length}  overlap="circular" color="primary">
         <div className="row icon" onClick={toggleDrawer(`right`, true)}> 
         
         <MdOutlineShoppingCart size="20px" /> Card
