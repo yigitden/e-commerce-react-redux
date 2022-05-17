@@ -6,9 +6,9 @@ import AmountButton from '../AmountButton'
 const ProductDetailsInfo = ({product}) => {
     const dispatch = useAppDispatch();
   return (
-    <div className='row  basket-list justify-space-between '>
+    <div className='row  summary-list justify-space-between '>
              
-            <div className='product-image col-1-xl'><img className='product-detail-image' src={product.image}/></div>
+            <div className='basket-image col-1-xl'><img className='product-detail-image' src={product.image}/></div>
             <div className='row product-title col-4-xl'>{product.title}</div>
       
              

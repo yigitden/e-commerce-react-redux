@@ -1,11 +1,42 @@
 @use 'sass:math';
-
+ 
 .product-detail-image{
     width: 100%;
     height: 100%; 
+    object-fit: contain;
 }
 .summary-card {
     border: 1px solid $gray;
     border-radius: math.div($base-border-radius,2);
+    .summary-subtitle{
+        color:$title;
+       
+    }
+    .summary-title{
+        font-weight: 500;
+        font-size: $base-font-size;
+        color:$title;
+    }
+    .summary-text{
+        color:$primary;
+    }
+    
 
+}
+.summary-list{
+    @extend %flex;
+    border: 1px solid $gray;
+    padding: $base-padding;
+    border-radius: math.div($base-border-radius,2); 
+    height: 100px;
+    margin-bottom: $base-margin;
+}
+.product-title {
+    color: $title;
+}
+.product-price{
+    @extend %flex;
+}
+.card-details{
+    color: $title;
 }

@@ -12,7 +12,7 @@ const ProductDetails = () => {
     <div className="container">
       <div className="row ">
         <div className="col-12-xl gap-3">
-          <h1>Card Details ({productsArrayInCard.length})</h1>
+          <h1 className="card-details">Card Details ({productsArrayInCard.length})</h1>
         </div>
       </div>
       <div className="row ">
