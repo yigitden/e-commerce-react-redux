@@ -1,9 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import ProductCard from "../ProductCard";
-import { useAppDispatch, useAppSelector } from "../../store";
+import ProductCard from "../ProductCard"; 
 const ProductList = () => {
-  const [allProducts, setAllProducts] = useState([]); 
+  const [allProducts, setAllProducts] = useState([]);
   const getAllProducts = async () => {
     await axios
       .get("https://fakestoreapi.com/products?limit=12")
@@ -16,19 +15,14 @@ const ProductList = () => {
   return (
     <div className="container">
       <div className="product-list row gap-1 justify-center">
-     
-            <>
-              {allProducts &&
-                allProducts.map((product) => (
-
-
-                  <ProductCard product={product}  />
-
-
-                  
-                ))}
-            </>
-        
+        <>
+          {allProducts &&
+            allProducts.map((product, index) => (
+              <ProductCard 
+              product={product} 
+              index={index} />
+            ))}
+        </>
       </div>
     </div>
   );

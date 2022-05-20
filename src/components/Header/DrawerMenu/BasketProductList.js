@@ -21,8 +21,8 @@ const BasketProductList = () => {
   return (
       <>
     <div className='basket-product-list'> 
-    {productsArrayInCard && productsArrayInCard.map((product)=>(
-        <Basket product={product}/>
+    {productsArrayInCard && productsArrayInCard.map((product,index)=>(
+        <Basket product={product} index={index}/>
     ))}
 
    </div>
