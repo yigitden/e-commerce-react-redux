@@ -1,33 +1,22 @@
-//variables & functions 
-@import 'variables';
-
+//variables & functions
+@import "variables";
 //fonts
-@import 'fonts';
+@import "fonts";
 //icons
-@import '../components/Header/RightIcons/icons';
+@import "../components/Header/RightIcons/icons";
 //header
-@import '../components/Header/header';
+@import "../components/Header/header";
 //product card
-@import '../components/ProductCard/productcard';
+@import "../components/ProductCard/productcard";
 //drawer menu
-@import '../components/Header/DrawerMenu/drawer';
+@import "../components/Header/DrawerMenu/drawer";
 //body part
-@import 'body';
-
-//product detail 
-@import '../components/ProductDetails/productdetail';
+@import "body";
+//product detail
+@import "../components/ProductDetails/productdetail";
 //productlist
-@import '../components/ProductList/productlist';
+@import "../components/ProductList/productlist";
 
 //base & layout
- 
-@import 'breakpoints';
-@import 'grid';
-
-//colors
- 
- 
-
-//utilities (margin,padding, opacity) 
-
-
+@import "breakpoints";
+@import "grid";
