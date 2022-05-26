@@ -1,20 +1,8 @@
-import React from 'react'
-import Banner from '../../components/Banner'
-import CategoryList from '../../components/CategoryList'
-import Header from '../../components/Header'
-
+import React from "react";
+import CategoryList from "../../components/CategoryList";
 
 const ProductOfCategory = () => {
-  return (
-    <>
-       
+  return <CategoryList />;
+};
 
-       <Header/> 
-       <CategoryList/>
-   
-  
-     </>
-  )
-}
-
-export default ProductOfCategory
+export default ProductOfCategory;

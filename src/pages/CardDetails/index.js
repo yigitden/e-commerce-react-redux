@@ -1,14 +1,8 @@
-import React from 'react'
-import Header from '../../components/Header'
-import ProductDetails from '../../components/ProductDetails'
+import React from "react";
+import ProductDetails from "../../components/ProductDetails";
 
 const CardDetails = () => {
-  return (
-    <>
-    <Header/>
-   <ProductDetails/>
-    </>
-  )
-}
+  return <ProductDetails />;
+};
 
-export default CardDetails
+export default CardDetails;

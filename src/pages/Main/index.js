@@ -1,17 +1,14 @@
-import React from 'react'
-import Banner from '../../components/Banner'
-import Header from '../../components/Header'
-import ProductList from '../../components/ProductList'
-
+import React from "react";
+import Banner from "../../components/Banner";
+import ProductList from "../../components/ProductList";
 
 const Main = () => {
   return (
     <>
-       <Header/>
-       <Banner/>
-       <ProductList/>
+      <Banner />
+      <ProductList />
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
